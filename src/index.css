@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
 
@@ -69,12 +69,15 @@ button {
 }
 
 ul li {
+    display: flex;
+    align-items: center;
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position:relative;
+    font-weight: 600;
 }
 
 ul li::before {
@@ -86,7 +89,7 @@ ul li::before {
     background-image: url(/assets/unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 8px;
     left: 8px;
 }
 
@@ -103,7 +106,7 @@ ul li.checked::before {
 ul li span {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 2px;
     width: 40px;
     height: 40px;
     font-size: 22px;
